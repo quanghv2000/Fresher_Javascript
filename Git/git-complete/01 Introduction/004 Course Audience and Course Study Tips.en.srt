@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:05,500
+
+
+2
+00:00:05,500 --> 00:00:11,100
+This course does have a few important assumptions and a target audience.
+
+3
+00:00:11,100 --> 00:00:15,900
+First of all, I assume that you have some basic computer skills.
+
+4
+00:00:15,900 --> 00:00:21,166
+I realize that is a vague requirement, and I suspect if you are able to join this course
+
+5
+00:00:21,166 --> 00:00:27,133
+and start watching it, then you are probably computer-literate enough for this course.
+
+6
+00:00:27,133 --> 00:00:30,233
+The next requirement is a bit more tricky;
+
+7
+00:00:30,233 --> 00:00:33,933
+you need to be able to install software on your computer,
+
+8
+00:00:33,933 --> 00:00:37,900
+and that normally requires admin rights.
+
+9
+00:00:37,900 --> 00:00:41,966
+This is generally not an issue, unless you are on a work computer;
+
+10
+00:00:41,966 --> 00:00:46,900
+that is, your IT department controls the rights to your system.
+
+11
+00:00:46,900 --> 00:00:51,266
+If you are on a personal computer, then you should have admin rights.
+
+12
+00:00:51,266 --> 00:00:56,200
+If you are unsure, just ask a more computer-savvy friend for help.
+
+13
+00:00:56,200 --> 00:01:00,366
+My next assumption is based on my target audience;
+
+14
+00:01:00,366 --> 00:01:06,866
+I assume you need source control, whether or not you realize that fact.
+
+15
+00:01:06,866 --> 00:01:10,800
+The people that need source control, would be anyone that creates original,
+
+16
+00:01:10,800 --> 00:01:14,500
+creative assets, like programming source code,
+
+17
+00:01:14,500 --> 00:01:18,466
+or web design content; which would include freelancers,
+
+18
+00:01:18,466 --> 00:01:24,400
+software developers, programmers, as well as web and graphic designers.
+
+19
+00:01:24,400 --> 00:01:29,200
+Finally, I assume that you have some interest in learning about Git.
+
+20
+00:01:29,200 --> 00:01:33,200
+This could extend beyond the need for source control directly;
+
+21
+00:01:33,200 --> 00:01:37,466
+for example, you could be an IT manager trying to understand
+
+22
+00:01:37,466 --> 00:01:42,300
+why your technical staff wants to use Git for their next project.
+
+23
+00:01:42,300 --> 00:01:48,800
+To get the most out of this course, I recommend following along as much as possible;
+
+24
+00:01:48,800 --> 00:01:52,433
+use another monitor, or device, as a second screen,
+
+25
+00:01:52,433 --> 00:01:55,866
+while you follow along with the course instructions.
+
+26
+00:01:55,866 --> 00:02:01,033
+And I may go a bit fast at times, so please pause the video
+
+27
+00:02:01,033 --> 00:02:06,966
+between commands or actions, to ensure you follow each step exactly.
+
+28
+00:02:06,966 --> 00:02:11,333
+This course provides lots of supplemental materials including:
+
+29
+00:02:11,333 --> 00:02:15,100
+a listing of every command I type during this course,
+
+30
+00:02:15,100 --> 00:02:21,733
+diagrams and illustrations for many concepts, and source code examples.
+
+31
+00:02:21,733 --> 00:02:26,866
+This course will evolve over time; I may add additional sections,
+
+32
+00:02:26,866 --> 00:02:30,233
+or more bonus content, to keep the course fresh
+
+33
+00:02:30,233 --> 00:02:35,466
+and to add more value to my students, so check back often.
+
+34
+00:02:35,466 --> 00:02:47,533
+Finally, connect with me on my website, twitter, Facebook, or my YouTube channel.
+

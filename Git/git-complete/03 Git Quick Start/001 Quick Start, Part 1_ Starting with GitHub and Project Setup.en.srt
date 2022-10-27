@@ -1,0 +1,228 @@
+1
+00:00:00,000 --> 00:00:06,000
+
+
+2
+00:00:06,000 --> 00:00:12,666
+In order to show the entire Git workflow, including the remote and local sides,
+
+3
+00:00:12,666 --> 00:00:17,433
+I will be starting with GitHub, by creating a repository there,
+
+4
+00:00:17,433 --> 00:00:22,166
+and then making a copy of that repository on our local system,
+
+5
+00:00:22,166 --> 00:00:27,633
+and, finally, synchronizing our changes back up to GitHub.
+
+6
+00:00:27,633 --> 00:00:33,466
+Allong the way, I'm going to explain each and every command used and why.
+
+7
+00:00:33,466 --> 00:00:38,533
+I'm going to start of by going to GitHub. While there are several Git hosting
+
+8
+00:00:38,533 --> 00:00:43,466
+services out there, GitHub is by far the most popular.
+
+9
+00:00:43,466 --> 00:00:49,433
+So, open your favorite modern browser, and then navigate to "github.com".
+
+10
+00:00:49,433 --> 00:00:54,500
+Once the page loads, you can sign in or sign up.
+
+11
+00:00:54,500 --> 00:00:58,966
+If you already have an account with GitHub, then click the "Sign In" button
+
+12
+00:00:58,966 --> 00:01:04,333
+near the top of the page, which loads the "Sign in" page.
+
+13
+00:01:04,333 --> 00:01:09,533
+Use your GitHub username and password to log in to your GitHub account.
+
+14
+00:01:09,533 --> 00:01:14,533
+However, if you are new to GitHub, you will need to sign up for an account.
+
+15
+00:01:14,533 --> 00:01:29,866
+From the GitHub homepage, fill out the sign up form to start the process.
+
+16
+00:01:29,866 --> 00:01:36,033
+You might be prompted for another screen if your initial username is already taken.
+
+17
+00:01:36,033 --> 00:01:51,766
+If so, just fill in that page until you are able to pick a username that isn't already taken.
+
+18
+00:01:51,766 --> 00:01:55,666
+Once you make it to the "Welcome to GitHub" page,
+
+19
+00:01:55,666 --> 00:02:00,733
+you officially have an account. Currently, GitHub uses the welcome page
+
+20
+00:02:00,733 --> 00:02:04,133
+to encourage you to sign up for a paid level.
+
+21
+00:02:04,133 --> 00:02:09,966
+However, the default is a free account, and that's all we need for this course.
+
+22
+00:02:09,966 --> 00:02:14,800
+At this point, just click on your username near the top of the page,
+
+23
+00:02:14,800 --> 00:02:17,966
+this will load your GitHub profile page.
+
+24
+00:02:17,966 --> 00:02:25,166
+Now, click on the odd-looking icon near the top left hand side of the page.
+
+25
+00:02:25,166 --> 00:02:31,033
+This is the Octocat logo that GitHub uses. Once you click on that logo,
+
+26
+00:02:31,033 --> 00:02:36,400
+That will bring you to the newsfeed page; it is the page you would normally land on
+
+27
+00:02:36,400 --> 00:02:42,133
+when you just sign into GitHub, which should have everyone on the same page now.
+
+28
+00:02:42,133 --> 00:02:46,233
+Let's create a new Git repository by clicking on the green
+
+29
+00:02:46,233 --> 00:02:51,566
+"New repository" button near the right hand side of the page.
+
+30
+00:02:51,566 --> 00:02:56,866
+Once the "New Repository" page loads, you'll notice a form asking
+
+31
+00:02:56,866 --> 00:03:00,733
+for a few pieces of information. For new accounts,
+
+32
+00:03:00,733 --> 00:03:04,566
+there should only be one owner available in the dropdown,
+
+33
+00:03:04,566 --> 00:03:09,833
+and it should be defaulted to your username. "Repository name" is a name
+
+34
+00:03:09,833 --> 00:03:16,233
+you wish to give your Git repository. I recommend a short, but descriptive name,
+
+35
+00:03:16,233 --> 00:03:21,866
+in all lowercase, no spaces, and words separated by dashes.
+
+36
+00:03:21,866 --> 00:03:28,133
+I'm going to use "github-demo" for the repository name.
+
+37
+00:03:28,133 --> 00:03:33,566
+The description is optional, but certainly a good idea. I'm going to type:
+
+38
+00:03:33,566 --> 00:03:39,633
+"A simple demo repository to show the basic Git workflow".
+
+39
+00:03:39,633 --> 00:03:45,166
+I'm going to leave the repository as public, and then click the
+
+40
+00:03:45,166 --> 00:03:51,466
+"Initialize this repository with a README"; that will start off our repository
+
+41
+00:03:51,466 --> 00:03:56,433
+with a simple README file. I'm going to leave the other options alone.
+
+42
+00:03:56,433 --> 00:04:00,666
+Double-check the form; make any adjustments if necessary,
+
+43
+00:04:00,666 --> 00:04:06,600
+and then click the "Create repository" button. Once that is done,
+
+44
+00:04:06,600 --> 00:04:15,800
+the repository will be created, and you will land on the main repository page.
+
+45
+00:04:15,800 --> 00:04:19,666
+Now that we've created our first repository on GitHub,
+
+46
+00:04:19,666 --> 00:04:23,733
+we need to prepare our local system before we can proceed.
+
+47
+00:04:23,733 --> 00:04:28,266
+I'm going to be doing most of my work in the command line. On windows,
+
+48
+00:04:28,266 --> 00:04:33,533
+use Git Bash, on the Mac, use the default terminal application
+
+49
+00:04:33,533 --> 00:04:40,166
+or, a third party terminal program like iTerm 2, which is what I'm using.
+
+50
+00:04:40,166 --> 00:04:44,266
+Either way, the Git commands will be the same. So now
+
+51
+00:04:44,266 --> 00:04:48,966
+open your terminal program. By default, your terminal program should
+
+52
+00:04:48,966 --> 00:04:56,500
+put you in your user's home directory, which we can confirm by typing "pwd".
+
+53
+00:04:56,500 --> 00:05:00,800
+I like to manage all my projects together in a projects directory
+
+54
+00:05:00,800 --> 00:05:09,400
+within my user's directory. To create that directory type "mkdir projects",
+
+55
+00:05:09,400 --> 00:05:17,133
+then press enter. Then change into that directory: "cd projects", press enter.
+
+56
+00:05:17,133 --> 00:05:21,900
+Now if we "pwd", you can see that we are now within our
+
+57
+00:05:21,900 --> 00:05:30,366
+"projects" folder underneath the user's home directory.
+

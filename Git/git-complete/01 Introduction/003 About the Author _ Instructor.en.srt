@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:06,000
+
+
+2
+00:00:06,000 --> 00:00:12,800
+So, you might be curious who I am and why I am qualified to teach this course.
+
+3
+00:00:12,800 --> 00:00:18,100
+Well, I'm a senior software engineer, with over 15 years of experience.
+
+4
+00:00:18,100 --> 00:00:24,233
+I've worked in all sizes of companies, from startups to large enterprises,
+
+5
+00:00:24,233 --> 00:00:27,900
+and I even do freelancing from time to time.
+
+6
+00:00:27,900 --> 00:00:31,400
+In my various roles, I've gravitated towards
+
+7
+00:00:31,400 --> 00:00:34,366
+the unofficial DevOps responsibilities,
+
+8
+00:00:34,366 --> 00:00:38,933
+in order to solve problems that commonly vex developers.
+
+9
+00:00:38,933 --> 00:00:43,866
+I have used some type of version control system for most of my career;
+
+10
+00:00:43,866 --> 00:00:47,833
+from CVS to Git, and several in-between.
+
+11
+00:00:47,833 --> 00:00:52,233
+In particular, I have trained hundreds of developers in person,
+
+12
+00:00:52,233 --> 00:01:01,866
+as well as thousands online, on how to use Git for source control.
+

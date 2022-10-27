@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:05,000
+
+
+2
+00:00:05,000 --> 00:00:10,300
+Hello, I'm Jason Taylor. Welcome to my comprehensive course
+
+3
+00:00:10,300 --> 00:00:15,566
+on the Git source control system. Since this course is designed to
+
+4
+00:00:15,566 --> 00:00:19,866
+walk you through the basic concepts to mastery to Git,
+
+5
+00:00:19,866 --> 00:00:23,000
+I have several goals for this course.
+
+6
+00:00:23,000 --> 00:00:26,800
+First, I want to make sure you know where to go for help
+
+7
+00:00:26,800 --> 00:00:30,800
+on Git concepts and commands. You should understand
+
+8
+00:00:30,800 --> 00:00:36,466
+the core concepts in Git, including general source control principles.
+
+9
+00:00:36,466 --> 00:00:39,266
+You should have a very good understanding and practice
+
+10
+00:00:39,266 --> 00:00:44,933
+with the main commands, including common options and parameters.
+
+11
+00:00:44,933 --> 00:00:49,500
+You will be able to compare differences with ease;
+
+12
+00:00:49,500 --> 00:00:53,866
+branching and merging will become second nature as we thoroughly cover
+
+13
+00:00:53,866 --> 00:00:58,366
+both topics. You will become familiar with GitHub,
+
+14
+00:00:58,366 --> 00:01:04,300
+one of the most popular Git repository hosting services available.
+
+15
+00:01:04,300 --> 00:01:11,700
+In doing so, I want you to learn Git well enough that you could teach a friend or teammate.
+
+16
+00:01:11,700 --> 00:01:16,100
+Finally, I want you to enjoy the bonus material at the end.
+
+17
+00:01:16,100 --> 00:01:19,733
+Bonus content is provided to supplement the course
+
+18
+00:01:19,733 --> 00:01:30,100
+with alternative approaches, tips and tricks, and non-critical skills.
+

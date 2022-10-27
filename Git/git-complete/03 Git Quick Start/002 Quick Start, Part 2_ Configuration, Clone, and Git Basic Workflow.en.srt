@@ -1,0 +1,382 @@
+1
+00:00:00,000 --> 00:00:06,333
+
+2
+00:00:06,333 --> 00:00:12,600
+On Windows, if you installed Git for Windows, and you are using Git Bash,
+
+3
+00:00:12,600 --> 00:00:17,466
+then you know Git is installed. On the Mac, it is less obvious;
+
+4
+00:00:17,466 --> 00:00:23,533
+so we need to ask Git for the version, in order to confirm that Git is available:
+
+5
+00:00:23,533 --> 00:00:31,266
+"git version". If Git responds with a version number, then Git is installed.
+
+6
+00:00:31,266 --> 00:00:34,666
+Otherwise, you may need to install Git before proceeding.
+
+7
+00:00:34,666 --> 00:00:39,000
+Git requires two bits of information before we can do very much;
+
+8
+00:00:39,000 --> 00:00:44,633
+that is the name and email address. If we don't provide that information,
+
+9
+00:00:44,633 --> 00:00:48,433
+Git will attempt to automatically figure it out.
+
+10
+00:00:48,433 --> 00:00:52,600
+However, I have found this process to be rather unreliable.
+
+11
+00:00:52,600 --> 00:01:03,266
+So let's just take care of it right now: "git config --global user.name", space,
+
+12
+00:01:03,266 --> 00:01:08,366
+and, in double quotes, just put your name. And then next
+
+13
+00:01:08,366 --> 00:01:21,100
+we'll do a similar command for the email address: "git config --global user.email",
+
+14
+00:01:21,100 --> 00:01:30,100
+space, and, in double quotes, put your email address. Press enter,
+
+15
+00:01:30,100 --> 00:01:40,366
+and now, let's confirm: "git config --global --list".
+
+16
+00:01:40,366 --> 00:01:46,300
+Git should list back your name and email address you entered above.
+
+17
+00:01:46,300 --> 00:01:50,666
+Now that our local system is all ready to go, let's return to our
+
+18
+00:01:50,666 --> 00:01:56,700
+browser where we left off. Which should be in our new repository's main page.
+
+19
+00:01:56,700 --> 00:02:02,166
+Now, I want to get a copy of this repository onto my local system.
+
+20
+00:02:02,166 --> 00:02:06,633
+The process to do that is called cloning a repository.
+
+21
+00:02:06,633 --> 00:02:12,933
+So, locate the clone options at the bottom of the right hand side of the page.
+
+22
+00:02:12,933 --> 00:02:18,766
+Make sure "HTTPS" is selected, and then click the copy button,
+
+23
+00:02:18,766 --> 00:02:25,633
+to copy the HTTPS URL for the repository to your system's clipboard.
+
+24
+00:02:25,633 --> 00:02:31,466
+If, for some reason, that button isn't available or isn't working,
+
+25
+00:02:31,466 --> 00:02:41,133
+just select the HTTPS URL, and then copy it into your clipboard manually.
+
+26
+00:02:41,133 --> 00:02:48,900
+Now that it's done, return back to the terminal and type "git clone", space,
+
+27
+00:02:48,900 --> 00:02:53,233
+and now just paste in your GitHub URL. Double check that line,
+
+28
+00:02:53,233 --> 00:02:57,133
+and then press enter. Git will now go out to GitHub
+
+29
+00:02:57,133 --> 00:03:02,800
+and make a full copy of our repository on GitHub to our local system.
+
+30
+00:03:02,800 --> 00:03:09,033
+Doing so, Git will automatically create a directory named after our repository;
+
+31
+00:03:09,033 --> 00:03:13,866
+which we can confirm by typing "ls", then press enter,
+
+32
+00:03:13,866 --> 00:03:17,533
+which lists out the contents of our current directory.
+
+33
+00:03:17,533 --> 00:03:25,466
+Now, let's go into our local repository's directory: "cd github-demo/".
+
+34
+00:03:25,466 --> 00:03:31,600
+Now if we "ls", we can see we have our readme file that was created
+
+35
+00:03:31,600 --> 00:03:37,333
+when we initialized our repository on GitHub. Now, if I ask Git about
+
+36
+00:03:37,333 --> 00:03:42,666
+the state of the repository with "git status",
+
+37
+00:03:42,666 --> 00:03:47,000
+"git status" tells us that I'm on the master branch.
+
+38
+00:03:47,000 --> 00:03:52,600
+The master branch is the default branch, by convention, for a Git repository.
+
+39
+00:03:52,600 --> 00:03:58,933
+The "git status" command also tells us master is "up-to-date with 'origin/master'.",
+
+40
+00:03:58,933 --> 00:04:04,100
+which refers to the master branch on the GitHub version of the repository;
+
+41
+00:04:04,100 --> 00:04:07,633
+the "git clone" command automatically set up a relationship
+
+42
+00:04:07,633 --> 00:04:12,566
+back to the repository on GitHub, and named that reference "origin".
+
+43
+00:04:12,566 --> 00:04:18,133
+Finally, Git tells us the working directory is clean; the working directory
+
+44
+00:04:18,133 --> 00:04:22,833
+is where we do all the work, and that Git monitors for changes.
+
+45
+00:04:22,833 --> 00:04:26,500
+We use the "git status" command to see if there are any changes
+
+46
+00:04:26,500 --> 00:04:31,633
+between the working directory, the staging area, our local repository,
+
+47
+00:04:31,633 --> 00:04:36,733
+and our remote repository. Now that we have our repository on our local system,
+
+48
+00:04:36,733 --> 00:04:40,900
+let's add a new file. For that, I'm going to use the bash commands
+
+49
+00:04:40,900 --> 00:04:47,066
+to create a simple text file. So type "echo"; space; and in, double quotes,
+
+50
+00:04:47,066 --> 00:04:52,400
+the contents of our file, "Test Git Quick start demo";
+
+51
+00:04:52,400 --> 00:04:57,533
+and then two greater than signs, that pipes the contents of the "echo" command
+
+52
+00:04:57,533 --> 00:05:02,300
+into a "start.txt" file; after that, press enter.
+
+53
+00:05:02,300 --> 00:05:06,766
+Now, we can see the file in our working directory; "ls".
+
+54
+00:05:06,766 --> 00:05:12,033
+Also, we can use the "cat" command to display the contents of that file:
+
+55
+00:05:12,033 --> 00:05:20,166
+"cat start.txt", press enter. Now, let's see what Git thinks about this file:
+
+56
+00:05:20,166 --> 00:05:25,000
+"git status", press enter. Now, when we do that,
+
+57
+00:05:25,000 --> 00:05:30,166
+Git says that we have an untracked file. An untracked file is just a file
+
+58
+00:05:30,166 --> 00:05:34,133
+in our working directory that hasn't been added to Git yet.
+
+59
+00:05:34,133 --> 00:05:39,366
+Our change, that is our new file, is in our working directory;
+
+60
+00:05:39,366 --> 00:05:44,200
+we haven't specifically told Git about it yet, so let's take care of that now
+
+61
+00:05:44,200 --> 00:05:52,633
+with Git's "add" command: "git add", space, and then the name of the file
+
+62
+00:05:52,633 --> 00:06:01,333
+"start.txt", press enter. Now if we do a "git status",
+
+63
+00:06:01,333 --> 00:06:06,966
+Git tells us there is a new file in the staging area, which Git describes as
+
+64
+00:06:06,966 --> 00:06:12,366
+"Changes to be committed:". So, now that our file is in the staging area
+
+65
+00:06:12,366 --> 00:06:16,366
+awaiting the commit. We haven't committed anything yet;
+
+66
+00:06:16,366 --> 00:06:19,933
+we can still back out the change from the staging area, and not impact
+
+67
+00:06:19,933 --> 00:06:24,633
+Git's history in any way. The staging area is designed to allow you to
+
+68
+00:06:24,633 --> 00:06:28,100
+build up several related changes, so they can be committed
+
+69
+00:06:28,100 --> 00:06:32,566
+as a single, atomic, unit. Now, let's move forward
+
+70
+00:06:32,566 --> 00:06:41,966
+by committing the new file into the repository: "git commit -m", space,
+
+71
+00:06:41,966 --> 00:06:49,200
+and in double quotes a commit message "Adding start text file", then press enter.
+
+72
+00:06:49,200 --> 00:06:56,166
+Great, now if I do a "git status", Git tells us that we're back in a
+
+73
+00:06:56,166 --> 00:06:59,600
+clean working directory state, and that our master branch
+
+74
+00:06:59,600 --> 00:07:02,500
+is ahead of "origin/master" by one commit.
+
+75
+00:07:02,500 --> 00:07:08,733
+So, now the new file has been moved from the staging area into the local repository.
+
+76
+00:07:08,733 --> 00:07:13,066
+Since there are no other pending changes, once the commit happens,
+
+77
+00:07:13,066 --> 00:07:17,200
+Git marks the working directory as clean. After the commit,
+
+78
+00:07:17,200 --> 00:07:22,466
+I mentioned the fact that our new file is now on the local repository.
+
+79
+00:07:22,466 --> 00:07:28,866
+The commit is still a local command, which means that our file is not yet on GitHub.
+
+80
+00:07:28,866 --> 00:07:32,600
+So, to prove this, let's return to our browser.
+
+81
+00:07:32,600 --> 00:07:35,766
+We should still be on our repository main page,
+
+82
+00:07:35,766 --> 00:07:41,133
+so refresh or reload your browser, to refresh the contents of that page.
+
+83
+00:07:41,133 --> 00:07:46,833
+What you should notice is that we still have just the README file on GitHub.
+
+84
+00:07:46,833 --> 00:07:51,666
+So, there is one last step we need to do, and that is a push.
+
+85
+00:07:51,666 --> 00:08:01,700
+So return to the terminal, and type "git push origin master".
+
+86
+00:08:01,700 --> 00:08:07,800
+This version of the "git push" command specifies the remote name, which is origin
+
+87
+00:08:07,800 --> 00:08:13,000
+which was set up for us automatically when we cloned the repository from GitHub;
+
+88
+00:08:13,000 --> 00:08:17,100
+and, the name of the name of the branch to push, which is "master",
+
+89
+00:08:17,100 --> 00:08:21,066
+since it is the only branch we have; now press enter.
+
+90
+00:08:21,066 --> 00:08:24,866
+Since you are making changes on your repository on GitHub,
+
+91
+00:08:24,866 --> 00:08:31,400
+the "git push" command will prompt you for your GitHub username and password.
+
+92
+00:08:31,400 --> 00:08:36,500
+Once the push command returns, then we can check the results.
+
+93
+00:08:36,500 --> 00:08:41,333
+If we did everything correctly, our new file should be on the GitHub copy
+
+94
+00:08:41,333 --> 00:08:47,233
+of our repository. Let's verify that by returning to our browser;
+
+95
+00:08:47,233 --> 00:08:54,300
+now, refresh the page again. Now we should see our "start.txt" file listed.
+
+96
+00:08:54,300 --> 00:08:59,300
+If I click on the filename, I can see the contents of that file as well.

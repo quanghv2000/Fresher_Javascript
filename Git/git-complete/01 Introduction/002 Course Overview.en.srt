@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:06,000
+
+
+2
+00:00:06,000 --> 00:00:09,233
+In order to accomplish the course goals,
+
+3
+00:00:09,233 --> 00:00:13,000
+the approach I'm going to take will follow this format:
+
+4
+00:00:13,000 --> 00:00:16,300
+first, an introduction to this course,
+
+5
+00:00:16,300 --> 00:00:21,300
+including the main motivation for source control and Git;
+
+6
+00:00:21,300 --> 00:00:26,633
+then, I will walk through, step by step, the installation of Git
+
+7
+00:00:26,633 --> 00:00:31,366
+on Windows, and the Mac; and the initial setup.
+
+8
+00:00:31,366 --> 00:00:35,766
+Once Git is installed, we will dive directly into a hands-on
+
+9
+00:00:35,766 --> 00:00:41,400
+quick win on command line, before going over any heavy theory.
+
+10
+00:00:41,400 --> 00:00:44,900
+I think theory and key concepts will be better understood
+
+11
+00:00:44,900 --> 00:00:50,466
+after some practical experience. After we have a better understanding
+
+12
+00:00:50,466 --> 00:00:54,466
+of how Git works, we'll dive back into the command line
+
+13
+00:00:54,466 --> 00:00:57,966
+by covering the basic commands in more detail.
+
+14
+00:00:57,966 --> 00:01:01,400
+Some of it will be review from the quickstart earlier,
+
+15
+00:01:01,400 --> 00:01:06,533
+but I will be adding much more detail, and more commands in this section.
+
+16
+00:01:06,533 --> 00:01:10,766
+With lots of changes in our repository, we will cover how to compare
+
+17
+00:01:10,766 --> 00:01:15,200
+the differences within our repository. After all of that,
+
+18
+00:01:15,200 --> 00:01:18,966
+we will cover a major part of Git: branching and merging.
+
+19
+00:01:18,966 --> 00:01:21,666
+Branching and merging are encouraged so much more
+
+20
+00:01:21,666 --> 00:01:27,900
+than in other version control systems, that I'm going to cover this in great detail.
+
+21
+00:01:27,900 --> 00:01:31,266
+Along the way, you will be exposed to GitHub,
+
+22
+00:01:31,266 --> 00:01:35,333
+which is the most popular Git hosting provider available.
+
+23
+00:01:35,333 --> 00:01:40,133
+And also, when needed, we will install and configure any tools
+
+24
+00:01:40,133 --> 00:01:47,233
+that are required, including a text editor and a visual compare and mergetool.
+
+25
+00:01:47,233 --> 00:01:50,900
+As promised, I will have tons of bonus content,
+
+26
+00:01:50,900 --> 00:01:55,433
+that I will keep adding on a regular basis, to keep this course fresh.
+
+27
+00:01:55,433 --> 00:01:58,766
+I believe the core of this course is done,
+
+28
+00:01:58,766 --> 00:02:04,433
+but I'm still working on many additional sections and refinements to this course.
+
+29
+00:02:04,433 --> 00:02:10,233
+So, I have priced this course accordingly. As a student of this course,
+
+30
+00:02:10,233 --> 00:02:19,900
+you will receive all updates free with your lifetime access.
+

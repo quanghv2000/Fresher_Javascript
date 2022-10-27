@@ -1,0 +1,31 @@
+1. Git init
+
+2. Git add
+
+3. Git commit 
+
+4. Git status
+
+5. Git log
+
+6. Git push
+
+7. Git pull
+
+8. Git clone
+
+9. Git checkout
+
+10. Git remote
+
+11. Git merge
+
+12. Git branch
+
+13. Git tag
+
+14. Git stash
+
+15. Git rebase
+
+16. Git reset
