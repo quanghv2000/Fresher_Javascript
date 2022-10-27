@@ -1,0 +1,32 @@
+.bg-white {
+    background-color: white !important;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.youtobe_logo {
+    width: 90px;
+    height: 20px;
+    margin: 22px 30px 18px;
+}
+
+.logo {
+    width: 25px;
+    margin: 20px 28px;
+}
+
+.trigger {
+    font-size: 20px;
+    margin-top: 22px;
+}
+
+.active__menu--sider {
+    background-color: #e6f7ff;
+    color: #1890ff;
+}
+
+.active__menu--sider-link {
+    color: #1890ff !important;
+}

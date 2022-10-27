@@ -1,0 +1,39 @@
+1. Bấm "ATTEMPT QUIZ"
+
+- Clone Quiz_Summary from Quiz
+
+ => Lưu quiz vào Quiz_Summary
+   - UserID
+   - QuizID
+   - Status: 'IN_PROGRESS'
+
+ => Lưu Question vào Question_Summary
+   - QuizSummaryId
+   - Status: 'NOT_YET_ANSWERED'
+
+ => Lưu Answers vào Answer_Summary
+   - QuestionSummaryId
+   - AnswerId
+   - isSelect: false
+ 
+ =>  Trả về Quiz_Summary_Created {id: 1283, ...}
+
+- Get Quiz_Summary vừa tạo theo QuizSummaryId: 1283 
+
+2. Bấm vào "Save" hoặc "Next"
+
+ => Lưu lại các câu trả lời của câu hỏi đã được select vào db
+    - Update Table Answer set isSelect và Table Question Summary 
+    theo QuestionSummaryId và AnswerId
+
+  + Nếu isSelect của tất cả Answer = false:
+	=> Không Update
+  + Nếu các câu hỏi nào có isSelect = true:
+      => Update isSelect của câu hỏi đó = true
+      => Update Question Summary = 'ANSWER_SAVED'
+3. Bấm vào Submit
+ 
+ => Tính marks, grade 
+ => Update Table Quiz_Summary set marks, grade, status = 'DONE'
+
+  

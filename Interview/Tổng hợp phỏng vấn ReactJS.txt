@@ -1,0 +1,100 @@
+Tổng hợp 20 câu hỏi phỏng vấn ReactJS.
+
+1, Virtual DOM là gì?
+- DOM - Document Object Model. => DOM đại diện cho 1 HTML document
+- DOM ảo sẽ nhẹ hơn DOM thực => khi trạng thái của 1 object bị thay đổi
+=> DOM ảo sẽ chỉ thay đổi tượng đó trong DOM thực thay vì cập nhập lại tất cả các đối tượng
+(không phải load lại trang)
+- Thuật toán Diffing để so sánh. (*)
+
+2, Class component khác gì với functional component
+- Khác nhau ở cách khai báo:
+	1. Class component extend từ Component của React và render => return
+	2. Function component khai báo giống như 1 function và return
+- Props
+	1. Props trong class component được truyền vào dưới dạng constructor()
+	2. Props trong function component được truyền vào dưới dạng params
+- State:
+	1. Class component: Khởi tạo: this.state = "", setState: this.setState
+	2. Function component: Khởi tạo: [state, setState] = useState(), setState(value)
+
+3, Trình bày về lifecycle method
+	componentDidMount
+	componentDidUpdate
+	componentWillUnmount
+
+4, Tại sao k thay đổi state trực tiếp mà phải qua hàm
+
+5, State khởi tạo là một hàm tính toán phức tạp thì có cách nào xử lí k
+
+6, count = 0;
+setCount(count+1)
+
+setCount(count+1)
+
+setCount(count+1)
+
+3 lần thì giá trị biến count là gì? (là 1 vì setState là một hàm bất đồng bộ)
+
+setCount((previous) => {
+	return previous + 1;
+})
+
+7, Có cách nào để tăng lên 3 luôn một lần k, có khi thực thi trong onClick của 1 button
+
+. . .
+
+8, Side effects là gì. Trình bày luồng của useEffect
+- side effect là những hành động event có thể làm thay đổi DOM trong react components.
+- ví dụ như khi click vào 1 button => ....
+
++ sử dụng useEffect khi muốn thực hiện các side Effect
+=> side effect, khi có 1 tác động xảy ra dẫn tới dữ liệu bị thay đổi
+=> ví dụ khi call api, add, update, delete record
+
+	- 1. useEffect(callback)
+	- 2. useEffect(callback, [])
+	- 3. useEffect(callback, [dependences])
+
+9, Có bao nhiêu cách giao tiếp giữa các component với nhau.
+	- 3 cách: View child, Event Emitter, Data service BehaviourSubject
+
+10, Có bao nhiêu cách chia layout? giải thích về grid và flex box
+	- Table
+	- float + clear
+	- flex-box: display: flex, justify-content: căn ngang, align-items: căn dọc, flex-flow: row wrap
+	- grid: dạng lưới 2 chiều gồm hàng và cột: display: grid, column-gap, row-gap, grid-column-start: 1, grid-column-start-end: 3
+	
+	+ So sánh grid và flex: 
+
+11, Làm sao để thay đổi một component cha từ component con
+	- sử dụng callback function - truyền dữ liệu thông qua props
+
+12, Hiểu như nào về dispatch action, trình bày về redux và thunk
+
+13, context api vs redux
+	- useContext - React hooks	
+
+14, react router guard là gì?
+	=> điều hướng trang dựa vào authentication 
+		react-router-guard 
+
+15, Virtual DOM được React tạo ra như nào? Khi Virtual DOM thay đổi thì Update lên DOM thật như nào? (Thuật toán Diff...)
+
+16, props, state là gì
+	- Props: properties: thuộc tính của component, có thể dùng để truyền data xuống component con và chỉ có thể thay đổi ở component cha
+	- State: chỉ có thể thay đổi ở component con, chỉ tồn tại ở component nếu ko dùng redux hoặc mapStateToProps
+
+17, đã từng optimize render? Làm sao để các component con không re-render khi prop của component cha thay đổi?
+	- React.Memo, useEffect(callback, [])
+
+18. state và props là gì? phân biệt?
+
+19. Truyền data giữa các component thế nào? Nếu thay đổi data trên component 1
+
+thì data trên component 2 sẽ ra sao nếu dùng chung trường đấy của data?
+
+=> truyền data thông qua props => khi thay đổi data trên
+
+20. cách call api? Directive là gì ? Đã tự tạo directive bao giờ chưa?
+	Dùng axios => tạo instance, gửi gồm header, param, body,...

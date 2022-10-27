@@ -1,0 +1,70 @@
+Phỏng vấn SQL:
+1. các loại join, union
+	+ Inner Join, Left Join, Right Join, Full Outer Join
+	+ union: Combine result-set of 2 or more Select statements
+2. hiểu gì về các relation trong database
+	+ One to One
+	+ One to Many
+	+ Many to Many
+3. cho ví dụ và hỏi về dùng câu lệnh gì để gọi ra thông tin các bảng
+	+ Select
+
+4. Index trong SQL? nếu có nhiều trường dữ liệu giống nhau có cần index không?
+
+5. Tình huống: Giả sử có một bảng nhân viên gồm các cột id, tên , salary. Làm cách nào để lấy ra người có lương cao thứ 2?
+	- select price from (
+		select distinct(price) from product 
+		order by price DESC	
+		limit n) as result offset (n-1)
+
+6. Tình huống: Giả sử có 1 bảng chứa tên tác giả, bảng khác chứa các thuộc tính của tác giả(tên,tuổi, cuons sách, v.v..). Khi xóa tác giả thì các thuộc tính của tác giả
+tại bảng khác phải mất?
+	- Xóa được và các bảng khác không mất dữ liệu (trừ khi lưu FK tac_gia_id thì sẽ không xóa được)
+	
+7. transaction là gì, xử lý transaction trong nodejs.ư
+	- Transaction là một tiến trình xử lý có xác định điểm đầu và điểm cuối, được chia nhỏ thành các operation (phép thực thi) 
+	- Nếu việc thực thi một operation nào đó bị fail (hỏng) đồng nghĩa với việc dữ liệu phải rollback (trở lại) trạng thái ban đầu.
+
+8. tăng performance khi xử lý db thì e xử lý như thế nào
+	- đánh index
+	- sử dụng exists thay vì count hoặc in
+9  cách thiết kế database, xoa bảng cascade,...
+
+10. Having và group by.
+	- Thường được sử dụng theo các mệnh đề SUM(), COUNT()
+
+11. DB gồm 3 bảng: user, quiz, score. 
+User lưu thông tin cơ bản user PK là user_id, quiz lưu các bộ câu hỏi quiz 1, quiz 2, quiz 3 PK là quiz_id, 
+score lưu điểm của các bài quiz của từng user bao gồm: user_id, quiz_id, score.
+Hãy viết sql query để tìm điểm cao nhất cho từng user với mỗi bộ câu hỏi quiz.
+
+12. View là gì và để làm gì? Type?
+	- View: Bảng ảo trong DB
+		+ CREATE VIEW ViewName AS
+		  SELECT ...
+	- Hạn chế truy cập tới các Table cụ thể. Chỉ cho phép được xem qua View.
+	- Hạn chế truy cập vào vào Column của Table.
+	- Truy vấn nhanh hơn rất nhiều khi join nhiều bảng
+	
+13. thiết kế bảng quan hệ n-n? bảng trung gian lưu thông tin gì? primary key,foreign key là gì?
+	- bảng trung gian lưu khóa ngoại của 2 bảng chính
+	- primary key: khóa chính
+	- foreign key: khóa ngoại
+
+14. có 2 bảng students, courses ,xóa bảng dữ liệu trong student mà dữ liệu liên quan trong courses cũng xóa theo?
+	- Không xóa được. (Cascade)
+15. Hai bảng quan hệ n-n. Student và Class. Viết câu lệnh truy vấn tất cả sinh viên thuộc Class = "Math"?
+	- join 3 bảng class, class_student và student => where class = "Math"
+	- join 1 bảng student và class_student where (class_student.class_id) = (select class.id from class where name = "Math")
+
+16. Phân biệt EXIST và IN?
+	- kiểu dữ liệu trả về: 
+		+ Exists: Boolean (return ngay sau khi tìm thấy)
+		+ In: Data (duyệt hết rồi mới return)
+
+17. Index trong database hoạt động như thế nào? Tại sao index dữ liệu lại cải thiện được hiệu suất của ứng dụng?
+
+18. Trigger là gì có những loại trigger nào trong PostgreSQL
+
+19. Em biết gì về Các loại tấn công SQL injection ?
+	- "1=1", "=" "; DROP TABLE ..."

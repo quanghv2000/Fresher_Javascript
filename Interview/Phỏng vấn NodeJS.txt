@@ -1,0 +1,65 @@
+ Phỏng Vấn Nodejs:
+1. Trình bày về mô hình MVC.
+	- Model, View, Controller
+2. Em đã làm việc với những Framework nào trên NodeJS rồi ? 
+	- ExpressJS, NestJS
+3. Trình bày về Middleware. Và cách hoạt động? đặt middleware ở đâu, xử lý các req thông qua middleware ntn,... 
+	- Middleware sẽ đóng vai trò trung gian giữa request/response (tương tác với người dùng) và các xử lý logic bên trong web server.
+
+4. Muốn trỏ vào các property của các đối tượng thì co the dùng cách nào?
+
+5. Nodejs hoạt động single thread hay multi thread? như thế nào?
+	- Single thread, cũng giống như JS tại 1 thời điểm NodeJS chỉ có thể thự thi 1 tác vụ nhất định
+
+6. event loop phần thực thi của nó như thế nào, các phase, các queue,...
+	- Callstack
+	- Web API
+	- Callback queue
+
+7. Hiểu gì về rest api, các status code, performance cua cac method? Khi nào thì trả về status 400? 201? 204?
+	- RESTful API là một tiêu chuẩn dùng trong việc thiết kế API cho các ứng dụng web (thiết kế Web services) để tiện cho việc quản lý các resource. 
+	- các status code: 
+		+ 1. Information response/ Phản hồi thông tin
+		+ 2. Successfully respone/ Phản hồi thành công
+		+ 3. Redirects/ Điều hướng
+		+ 4. Client errors/ Lỗi phía client
+		+ 5. Server error/ Lỗi phía máy chủ
+	- 200: Success, 201: Created, 204: No content, 400: Bad request, 401: Unauthorized, 403: Forbiden, 500: Internal server error
+	
+8. Libuv có ý nghĩa gì trong Nodejs, có thể thêm Thread để xử lý không?
+
+9. JWT là gì, tại sao dùng JWT? Nếu cách phân quyền và xác thực trong project đã làm?
+	- JSON Web Token: Header, Payload, Signature
+	+ Bảo mật, Truyền đạt - trao đổi thông tin
+
+10. phân biệt giữa GET và POST?
+	+ Get: 
+		- data request trên URL
+		- Retrieve resources		
+	+ Post: 
+		- data request trong body
+		- Create a new resource, bảo mật thông tin
+11. POST có đc lưu ở cache không
+	- Không
+12. Phân biệt rest api với MVC
+	+ MVC trả về view + data: Server Rendering
+	+ Rest API chỉ trả về data: Client Rendering
+
+13. NestJS có gì ưu việt hơn các Framework khác?
+	+ Support Typescript (nhưng vẫn cho phép code = JS)
+	+ Design Pattern
+	+ Có nhiều module hỗ trợ
+14. put và patch khác gì nhau? mã unauthen là mã nào, 403 là mã gì? (Trong chuẩn Restful)
+	+ PUT and PATCH: Update a resource'
+		- khi sử dụng PUT để update, ta phải gửi 1 bản ghi đầy đủ các field để yêu cầu cập nhật. Nếu chỉ gửi 1 số field nhất định thì những field còn lại sẽ bị xóa (tức bị null)
+		- PATCH giống PUT về ý nghĩa nhưng khác nhau về cách làm việc, nó chỉ thay đổi những field được yêu cầu thay vì thay đổi toàn bộ record.
+	+ 401: Unauthorized, 403: Forbiden
+15. Sự khác biệt giữa Nest vs Express 
+	1. Unopinionated and Opinionated
+	2. Model View Controller Pattern'
+	3. TypeScript and Decorators
+	4. Easy Unit-Testing 
+	5. Performance
+
+16. khi em validattion thì e dùng cái gì để validate 
+- class-validator class-transformer (NestJS)

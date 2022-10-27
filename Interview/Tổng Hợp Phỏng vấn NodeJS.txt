@@ -1,0 +1,106 @@
+Phỏng Vấn Nodejs:
+1. Trình bày về mô hình MVC.
+2. Em đã làm việc với những Framework nào trên NodeJS rồi ? 
+3. Trình bày về Middleware. Và cách hoạt động? đặt middleware ở đâu, xử lý các req thông qua middleware ntn,... 
+4. Muốn trỏ vào các property của các đối tượng thì co the dùng cách nào?
+5. Nodejs hoạt động single thread hay multi thread? như thế nào?
+6. event loop phần thực thi của nó như thế nào, các phase, các queue,...
+7. Hiểu gì về rest api, các status code, performance cua cac method? Khi nào thì trả về status 400? 201? 204?
+8. Libuv có ý nghĩa gì trong Nodejs, có thể thêm Thread để xử lý không?
+9. JWT là gì, tại sao dùng JWT? Nếu cách phân quyền và xác thực trong project đã làm?
+10. phân biệt giữa GET và POST?
+11. POST có đc lưu ở cache không
+12. Phân biệt rest api với MVC
+13. NestJS có gì ưu việt hơn các Framework khác?
+14. put và patch khác gì nhau? mã unauthen là mã nào, 403 là mã gì? (Trong chuẩn Restful)
+15. Sự khác biệt giữa Nest vs Express 
+16. khi em validattion thì e dùng cái gì để validate 
+Js:
+1. hiểu như thế nào về array
+2. các cách copy 1 array, tìm phần tử giống nhau trong 2 mảng, Thêm phần tử vào 1 mảng.
+3. phần xử lý array(các hàm cơ bản, filter, map, forEach)
+4. Cách khai báo biến trong ES6, sự khác biệt giữa LET VAR CONST
+5. Cách đổi thuộc tính các object bằng cách khai báo CONST.
+6. Thêm phần tử vào đầu mảng, cuối mảng. Thay thế phần tử trong vị trí bất kìa chọn trước.
+7. Sự khác biệt giữa Map, Filter, Reduce?
+8. Các cách kế thừa sử dụng trong ES6?
+9. Sử dụng promise async/await ntn, có 5 function viết ntn cho cả 5 chạy
+10. this keyword?
+11. bất đồng bộ , promise là j , làm thế nào để xử lý bất đồng bộ
+12. arrow khác func thường ntn
+13. constructor trong js, constructor để init object value như thế nào
+14. pure function, imutable
+15. destructuring
+16. closure là gì
+17. "Lấy một ví dụ để minh họa Js chạy trên môi trường trình duyệt web chrome là single thread"
+    for(let i =0; i<100000;i++) console.log(i);
+    settimeout(()=>console.log("settimeout"));
+18. So sánh giữa export và module.export
+19. File package.json, package-lock.json gồm những gì
+20. Promise, promise, callback, callback hell, async await. Promise có ưu điểm gì hơn callback? Nếu async/await có thể thay thế đc cho promise 
+    vậy tại sao khi chạy nhiều tác vụ vẫn sử dụng promise.all?
+21. call, bind, apply.
+22. 3 cách khởi tạo object? có gì khác nhau (new, object.create, {})
+23. Viết function giống .map()
+24. tìm 2 phần tử trong mảng có tổng bằng với 1 target https://leetcode.com/problems/two-sum/
+25. Cho arr = ["google","apple","google","fb"]. làm sao để kết quả là: google: 2, apple: 1, fb: 1
+26. export default vs module.exports khác gì nhau
+27. khác nhau giữa == và ===
+28. Các keys trong Object có trùng nhau. Object keys được coi là kiểu dữ liệu gì?
+29. Trong Promise all có 3 promise return  resolve và 1 promise return reject => ouput
+    const promise1 = Promise.resolve('First')
+    const promise1 = Promise.resolve('Second')
+    const promise1 = Promise.resolve('Third')
+    const promise1 = Promise.resolve('Fourth')
+    const runPromises = async () => {
+        const res1  = await  Promise.all([])
+    }
+30. let a = [1,2,3]
+a[-1] = 0
+a[10] = 10
+console.log(a[6],a.length)
+31. Cách đóng băng 1 Object? Làm sao để Object đó có thể dùng các vòng loop qua được (for, for-in, for-of)
+32. for(var i=0;i<3;i++) {
+    setTimeout(() => console.log(i),1);
+    }
+    for(let i=0;i<3;i++) {
+    setTimeout(() => console.log(i),1);
+    }
+    output là bn thay đổi thời gian của setTimeout thì sao?
+
+SQL:
+1. các loại join, union
+2. hiểu gì về các relation trong database
+3. cho ví dụ và hỏi về dùng câu lệnh gì để gọi ra thông tin các bảng
+4. Index trong SQL? nếu có nhiều trường dữ liệu giống nhau có cần index không?
+5. Tình huống: Giả sử có một bảng nhân viên gồm các cột id, tên , salary. Làm cách nào để lấy ra người có lương cao thứ 2?
+6. Tình huống: Giả sử có 1 bảng chứa tên tác giả, bảng khác chứa các thuộc tính của tác giả(tên,tuổi, cuons sách, v.v..). Khi xóa tác giả thì các thuộc tính của tác giả
+tại bảng khác phải mất?
+7. transaction là gì, xử lý transaction trong nodejs.
+8. tăng performance khi xử lý db thì e xử lý như thế nào
+9  cách thiết kế database, xoa bảng cascade,...
+10. Having và group by.
+11. DB gồm 3 bảng: user, quiz, score. 
+User lưu thông tin cơ bản user PK là user_id, quiz lưu các bộ câu hỏi quiz 1, quiz 2, quiz 3 PK là quiz_id, 
+score lưu điểm của các bài quiz của từng user bao gồm: user_id, quiz_id, score.
+Hãy viết sql query để tìm điểm cao nhất cho từng user với mỗi bộ câu hỏi quiz.
+12. View là gì và để làm gì? Type?
+13. thiết kế bảng quan hệ n-n? bảng trung gian lưu thông tin gì? primary key,foreign key là gì?
+14. có 2 bảng students, courses ,xóa bảng dữ liệu trong student mà dữ liệu liên quan trong courses cũng xóa theo?
+15. Hai bảng quan hệ n-n. Student và Class. Viết câu lệnh truy vấn tất cả sinh viên thuộc Class = "Math"?
+16. Phân biệt EXIST và IN?
+17. Index trong database hoạt động như thế nào? Tại sao index dữ liệu lại cải thiện được hiệu suất của ứng dụng?
+18. Trigger là gì có những loại trigger nào trong PostgreSQL
+19. Em biết gì về Các loại tấn công SQL injection ?
+No SQL:
+1. MongoDB có transaction không? khác gì so với transaction trong cơ sở dữ liệu có quan hệ.
+2. Xây dựng quan hệ giữa các documents trong mongoDB như thế nào?
+3. Khi nào sử dụng database quan hệ và khi nào thì không nên sử dụng nó mà sử dụng nosql?
+Git:
+1. "git stash" dùng để làm gì?
+2. Khi nào bạn sử dụng "git rebase" thay vì "git merge"?
+3. Làm sao để xóa các commit trước đó? (ví dụ có 10 commit thì muốn xoá commit thứ 7 như nào)
+ heart 1 surprised 1
+Loading...
+Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
+

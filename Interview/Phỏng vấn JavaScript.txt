@@ -1,0 +1,164 @@
+Js:
+1. hiểu như thế nào về array
+- Array trong JavaScript cũng là một loại object.
+    + Array (mảng) được thiết kế để lưu trữ dữ liệu theo thứ tự.
+    + Object (đối tượng) bình thường chỉ là tập hợp của các cặp key-value.
+
+2. các cách copy 1 array, tìm phần tử giống nhau trong 2 mảng, Thêm phần tử vào 1 mảng.
+	- Copy 1 Array: Array.slice(), Array.map(), spread oprerator,...
+	- tìm phần tử giống nhau trong 2 mảng: 
+		+ 2 vòng for lồng nhau => độ phức tạp O(n2)
+		+ Sort and while => độ phức tạp O(nlogn)
+	- Thêm phần tử vào 1 mảng: 
+		+ index: thêm 1 phần tử vào mảng
+		+ unshift(): thêm một hoặc nhiều phần tử vào đầu mảng
+		+ push() : thêm một hoặc nhiều phần tử vào cuối mảng
+
+3. phần xử lý array(các hàm cơ bản, filter, map, forEach)
+	+ filter, map: tạo ra 1 mảng mới
+	+ forEach: duyệt qua tất cả các elements trong mảng
+
+4. Cách khai báo biến trong ES6, sự khác biệt giữa LET VAR CONST
+	- Scope:
+		+ var: global, function
+		+ let, const: block
+	- Hoisting: 
+		+ var: Yes
+		+ let, const: No ("Temporal Dead Zone")
+	- Can be re-declarable: var.
+	- Can be re-assignable: var, let
+
+5. Cách đổi thuộc tính các object bằng cách khai báo CONST.
+	- object.key = value
+
+6. Thêm phần tử vào đầu mảng, cuối mảng. Thay thế phần tử trong vị trí bất kìa chọn trước.
+	- array.unshift(items), array.push(items), array[index] = item
+
+7. Sự khác biệt giữa Map, Filter, Reduce?
+	+ filter, map: tạo ra 1 mảng mới
+	+ Array.reduce()
+    	- Return về 1 giá trị duy nhất
+    	- Nhận 2 đối số truyền vào: 
+        1. function() {}
+        2. initialValue: giá trị khởi tạo
+	
+8. Các cách kế thừa sử dụng trong ES6?
+	- Class, Interface, Constructor
+
+9. Sử dụng promise async/await ntn, có 5 function viết ntn cho cả 5 chạy
+	- const promise1 = new Promise((resolve, reject) => {
+		setTimeOut(resovle(1), 3000)
+	})
+	- const promises = [promise1, promise2, promise3, promise4, promise5];
+	- await Pomise.all(promises);
+
+10. this keyword?
+	+ Đặc tính
+		1. Trong 1 phương thức, "this" tham chiếu tới đối tượng truy cập phương thức
+			(đối tượng trước dấu chấm)
+		2. Đứng ngoài phương thức, "this" tham chiếu đến đối tượng global
+	+ Lưu ý
+		- "this" trong hàm tạo là đại diện cho đối tượng sẽ được
+		- "this" trong 1 hàm là undefine khi ở strict mode
+		- Các phương thức bind(), call(), apply() có thể tham chiếu this tới đối tượng khác
+
+11. bất đồng bộ , promise là gì , làm thế nào để xử lý bất đồng bộ
+	- Promise là gì?
+		+ Promise là 1 cơ chế trong JS giúp thực thi các tác vụ bất đồng bộ. (giải quyết callback hell)
+	- Làm thế nào để xử lý bất đồng bộ?
+		+ Callback function
+
+12. arrow khác func thường ntn
+	- Declaration Function: Hoisting.
+	- Expression Function: No Hoisting. (Note: Vẫn hoisting khi khai báo var)
+	- Arrow Function:
+		+ Object Methods: do not have their own this. (No context)
+		+ Prototype Methods: do not have a prototype property. (Undefine)
+	
+13. constructor trong js, constructor để init object value như thế nào
+	- Constructor cũng giống như 1 hàm thông thường.
+	- Tên của constructor nên được bắt đầu bằng chữ in hoa
+	- Khởi tạo bằng cách dùng từ khóa "new"
+14. pure function, imutable
+
+15. destructuring
+	- Rest operator
+	- Spread operator
+	- Shalow copy: objectCoppied = object
+		+ Original Object, Cloned Object => Referenced Object
+	- Deep copy: spread operator, object.assign, JSON stringify and parse
+		+ Original Object => Referenced Object
+    		+ Cloned Object => Referenced Clone
+		- Khi dùng spread operator và object.assign => Deep copy chỉ có thể disconnect trong object có 1 cấp
+
+16. closure là gì?
+	- Ứng dụng:
+		+ Viết code ngắn gọn hơn
+		+ Biểu diễn, ứng dụng tính private trong OOP
+	
+17. "Lấy một ví dụ để minh họa Js chạy trên môi trường trình duyệt web chrome là single thread"
+    for(let i =0; i<100000;i++) console.log(i);
+    settimeout(()=>console.log("settimeout"));
+
+18. So sánh giữa export và module.export
+	- module là một đối tượng - có thuộc tính là exports 
+	- exports là một biến - module.exports
+	- Nếu đặt một thuộc tính exports, chẳng hạn exports.a = 9;
+		=> điều đó cũng sẽ được đặt module.exports.a
+
+19. File package.json, package-lock.json gồm những gì
+
+20. Promise, promise, callback, callback hell, async await. Promise có ưu điểm gì hơn callback? Nếu async/await có thể thay thế đc cho promise 
+    vậy tại sao khi chạy nhiều tác vụ vẫn sử dụng promise.all?
+	- Promise giải quyết callback hell => code ngắn gọn dễ đọc hơn.
+	- async/await chạy tuần tự, promise.all() thực thi tất cả cùng 1 lúc (Nhanh hơn)
+
+21. call, bind, apply.
+
+22. 3 cách khởi tạo object? có gì khác nhau (new, object.create, {})
+	- object = {}: toán tử nạp chồng
+	- new: function contructor - kế thừa lại những prototype của object truyền vào
+	- object.create() => object nguyên thủy để tạo tất cả các object
+23. Viết function giống .map()
+24. tìm 2 phần tử trong mảng có tổng bằng với 1 target https://leetcode.com/problems/two-sum/
+25. Cho arr = ["google","apple","google","fb"]. làm sao để kết quả là: google: 2, apple: 1, fb: 1
+26. export default vs module.exports khác gì nhau
+
+27. khác nhau giữa == và ===
+	+ ==: chuyển đổi kiểu dữ liệu trước khi so sánh
+	+ ===: không đổi kiểu dữ liệu khi so sánh
+
+28. Các keys trong Object có trùng nhau. Object keys được coi là kiểu dữ liệu gì?
+	+ Object keys không trùng nhau
+	+ Object key: Reference type
+
+29. Trong Promise all có 3 promise return resolve và 1 promise return reject => ouput
+    const promise1 = Promise.resolve('First')
+    const promise1 = Promise.resolve('Second')
+    const promise1 = Promise.resolve('Third')
+    const promise1 = Promise.resolve('Fourth')
+    const runPromises = async () => {
+        const res1  = await  Promise.all([])
+    }
+	=> ReferenceError;
+ 	Note: Promise.allSettled() => do not throw ReferenceError
+
+30. let a = [1,2,3]
+a[-1] = 0
+a[10] = 10
+console.log(a[6],a.length): 	- undefined 11
+
+31. Cách đóng băng 1 Object? Làm sao để Object đó có thể dùng các vòng loop qua được (for, for-in, for-of)
+	- object.freeze()
+	- for in có thể duyệt qua object
+		+ for (var key in object)
+	- for-of không thể duyệt qua object
+		+ for (var key of Object.keys())
+	
+32. for(var i=0;i<3;i++) {
+    setTimeout(() => console.log(i),1);
+    }
+    for(let i=0;i<3;i++) {
+    setTimeout(() => console.log(i),1);
+    }
+    output là bn thay đổi thời gian của setTimeout thì sao?

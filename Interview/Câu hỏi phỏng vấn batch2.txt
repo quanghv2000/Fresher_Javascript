@@ -1,0 +1,44 @@
+Javascript:
+
+- cách khai báo biến var, let, const?
+	+ ví dụ 1: 
+		const std = {name: 'haidv7'};
+		std2.name = 'quang';
+		console.log(std.name); ??? Giải thích?
+ 	+ ví dụ 2:
+		const arrs = [1,2,3]
+		arrs.push(4);
+		console.log(arrs); ???
+		const b = arrs.push(4); ??? Giải thích?
+
+- trình bày hiểu biết về arrow function?
+- khác nhau giữa arrow function và declaration function, expression function?
+- call, bind, apply
+
+NodeJS
+
+- Đã từng sử dụng ExpressJS chưa?
+- Có biết về mô hình MVC không? 
+- Trong các project đã làm em đã triển khai theo những design partten nào và trình bày về design partten đó.
+- Repository là gì? Tại sao lại phải dùng repository? Khi chuyển đổi hệ quản trị CSDL thì lúc này Repository có phát huy được tác dụng của nó không? và như thế nào?
+- JWT là gì? có mấy phần chính? dùng để làm gì? trình bày cách triển khai trong những project đã làm.
+- Trình bày hiểu biết về Restful API và Https method
+- Khi triển khai project NodeJS - viết API thì data respone em có tuân theo 1 chuẩn quy ước nào không?
+- Phân biệt method PUT và method PATCH
+- Khi test API em sử dụng gì để test (Postman)? Em có biết Unit test không? Trình bày ý tưởng và cách triển khai khi viết 1 Unit test
+
+SQL
+
+- Nêu các loại join? Inner Join và Left Join khác nhau như thế nào?
+- Index trong SQL? Dùng để làm gì? Ưu nhược điểm? Khi nào thì cần sử dụng index
+- Nêu cách phân trang phía server? (request: pageIndex, pageSize) => sử dụng limit và offset
+- Ngoài cách phân trang sử dụng limit và offset thì còn cách nào không? Phân trang = cách sử dụng index? explain analyze.
+
+ReactJS
+
+- Trình bày hiểu biết về React Hook
+- useState là gì? dùng để làm gì?
+- useEffect dùng để làm gì? sử dụng useEffect khi nào?
+- Trình bày hiểu biết về Redux? đã từng sử dụng redux thunk chưa?
+- Nêu cách triển khai redux saga trong project em đã làm?
+- Tại sao phải sử dụng Redux? Không sử dụng Redux có được không? Performance khi sử dụng Redux?

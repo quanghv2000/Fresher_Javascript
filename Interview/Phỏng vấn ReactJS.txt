@@ -1,0 +1,50 @@
+Phỏng vấn ReactJS
+
+I. ReactJS là gì?
+II. Câu hỏi phỏng vấn ReactJS cơ bản?
+III. Câu hỏi phỏng vấn ReactJS về Components?
+IV. Câu hỏi phỏng vấn ReactJS về React Redux?
+V. Câu hỏi phỏng vấn ReactJS về React Router?
+VI. Câu hỏi phỏng vấn React về Styling?
+
+I. ReactJS là gì?
+- ReactJS là thư viện JavaScript front-end.'
+
+II. Câu hỏi phỏng vấn ReactJS cơ bản?
+
+1. Những đặc điểm của ReactJS.
+- JSX
+- Components
+- Virtual DOM (DOM ảo)
+- One-way data-binding (Truyền dữ liệu 1 chiều)
+- Hiệu suất cao
+
+2. JSX là gì?
+- JSX là 1 phần mở rộng cú pháp Javascript => có thể viết các cấu trúc HTML trong cùng 1 file chứa Javascript
+
+3. Các trình duyệt web có đọc JSX một cách trực tiếp không?
+- Trình duyệt web không thể đọc JSX một cách trực tiếp. 
+Điều này là do chúng được xây dựng để chỉ đọc các đối tượng JS thông thường và JSX không phải là một đối tượng JavaScript thông thường.
+- Để trình duyệt web có thể đọc được tệp JSX, tệp cần được chuyển đổi thành một đối tượng JavaScript thông thường. 
+Để làm điều này, ví dụ như sử dụng Babel.
+
+4. Virtual DOM (DOM ảo) là gì?
+- DOM là viết tắt của Document Object Model.
+- DOM đại diện cho một tài liệu HTML có cấu trúc cây logic. Mỗi nhánh của cây kết thúc bằng một nút và mỗi nút chứa các đối tượng.
+- React giữ một bản “đại diện” nhưng nhẹ hơn của DOM “thực” trong bộ nhớ, gọi là DOM ảo (Virtual DOM). Khi trạng thái của một đối tượng (object) thay đổi, 
+DOM ảo chỉ thay đổi đối tượng đó trong DOM thực, thay vì cập nhật tất cả các đối tượng.'
+
+5. Tại sao nên sử dụng React thay vì các framework khác, ví dụ như Angular?
+- Dễ dàng tạo các ứng dụng động.
+- Hiệu suất được cải thiện hơn = việc sử dụng DOM ảo.
+- Các thành phần có thể tái sử dụng: Components.
+- Luồng dữ liệu 1 chiều: Truyền dữ liệu thông qua props.
+- Các công cụ chuyên dụng để debug dễ dàng.
+
+6. Điểm khác biệt giữa tiêu chuẩn ES6 và ES5?
+- Components và Function
+- exports vs export
+- require vs import
+
+7. Event trong ReactJS?
+- onClick, onChange, onSubmit, ...
