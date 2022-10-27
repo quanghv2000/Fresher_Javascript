@@ -30,12 +30,14 @@ function foo() {
     }
 */
 
+// stack
 const a = 1;
 const b = 1;
 
+// heap
 const c = [1];
 const d = [1];
 
-console.log(a === b) // true
-console.log(c === d) // false
-// stack
+console.log(a === b) // true --- stack
+console.log(c === d) // false --- heap
+

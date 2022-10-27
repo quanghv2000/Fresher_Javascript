@@ -3,7 +3,7 @@
 // 1. Scope: block scope {}
 // 2. Re-assignable - Có thể gán lại: No
 // 3. Re-declarable - Có thể khai báo lại: No
-// 4. Hoisting: No => stored in "Temporal Dead Zone"
+// 4. Hoisting: Yes => But stored in "Temporal Dead Zone"
 
 // 1. Scope: block scope {}
 

@@ -11,7 +11,7 @@ let birthDate = null;
 // Stack sẽ lưu các biến trên như sau:
 
 // | const company = 'FPT Software'; |
-// | const balance = 2000;         |
+// | const balance = 2000;           |
 // | let isActive = true;            |
 // | let name = "Quang";             |
 // | let birthDate = null;           |

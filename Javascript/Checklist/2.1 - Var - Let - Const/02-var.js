@@ -8,16 +8,16 @@
 // 1. Scope
 console.log('1. Scope')
 
-var language = "JavaScript";
+var language = "JavaScript"; // global scope
 
 function foo() {
-    var language = "Python";
-    framework = "React";
+    var language = "Python";  // function scope
+    framework = "React"; // global scope (Err in strict mode)
     console.log(language);
 }
  
-foo(); // "Python"
 console.log(language); // "JavaScript"
+foo(); // "Python"
 // console.log(window.language); // "JavaScript"
 // console.log(window.framework); // "React"
 

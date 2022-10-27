@@ -15,14 +15,14 @@
     Function declaration lifecycle
 
     function fullName() {
-s
+
     }
 
     1. Declaration Phase, Initialization Phase, Assignment Phase => fullName is invoked | Assgined state
 */
 
 /*
-    let variables lifecycle
+    let, const variables lifecycle
 
     1. Declaration Phase: RefenrenceError => Temporal Dead Zone | Declared state
 

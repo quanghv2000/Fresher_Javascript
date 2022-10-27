@@ -119,23 +119,6 @@ const user = [
   },
 ];
 
-const newData = data.map((item, index) => {
-    let newItem = {...item, numOfPost: 0, numOfUser: 0};
-    posting.forEach((post) => {
-        if (post.month === newItem.month) {
-            newItem.numOfPost = post.number;
-        }
-    })
-
-    user.forEach((user) => {
-        if (user.month === newItem.month) {
-            newItem.numOfUser = user.number;
-        }
-    })
-
-    return {...newItem, month: `Tháng ${newItem.month}`};
-})
-
 posting.forEach((item) => {
   data[item.month - 1].numOfPost = item.number;
 })
