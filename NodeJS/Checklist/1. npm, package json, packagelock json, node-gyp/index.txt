@@ -1,0 +1,24 @@
+1. NPM là gì?
+- NPM - viết tắt của "Node package manager", 
+là công cụ tạo và quản lý các thư viện lập trình Javascript cho NodeJS.
+
+- Công dụng của NPM: Các thư viện đều có sẵn trên npm.
+=> chỉ cần npm install package-name
+
+2. package.json
+- Để quản lý các gói thư viện mà project sử dụng
+- Cho phép xác định phiên bản chính xác của các gói thư viện
+- Chia sẻ dễ dàng
+	+ "dependencies": danh sách các gói phụ thuộc, tự động được cài theo.
+
+3. package-lock.json
+- ví dụ: "redux-thunk": "^2.3.0" - trong package.json
+- npm sẽ tự động install phiên bản mới nhất "^"
+
+=> Trong trường hợp xảy ra xung đột giữa 2 phiên bản mới và cũ
+=> Sử dụng package-lock.json thay vì package.json để cài đặt các modules 
+do package-lock.json đã chỉ định rõ phiên bản cho mỗi module và từng dependencies của nó.
+=> Cài đặt của nó tạo ra sẽ luôn giống nhau cho dù cài đặt vào lúc nào.
+
+4. node-gyp 
+- đây là một build tool dùng để compile native addon modules cho Nodejs:

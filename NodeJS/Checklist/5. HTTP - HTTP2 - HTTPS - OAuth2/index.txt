@@ -1,0 +1,66 @@
+1. HTTP là gì?
+- HTTP là giao thức truyền tải văn bản của trang web sang trình duyệt.
+- Sau đó chuyển đổi nội dung sang văn bản, hỉnh ảnh, video.
+
++ Cách thức hoạt động
+
+Các gói dữ liệu bao gồm ba phần:
+
+	* Header: chứa các thông tin về địa chỉ xuất phát của gói,
+                địa chỉ đích đến. Và vài thông tin phụ trợ như loại dữ liệu, 
+                dung lượng dữ liệu,…
+	* Payload: chứa dữ liệu chính cần được truyền tải
+	* Footer: chứa một số thông tin dùng để phát hiện và chỉnh sửa lỗi trong quá trình truyền gửi.
+
+2. HTTP/2
+
+- HTTP/2 là một phiên bản hiện đại, tiên tiếng hơn HTTP/1.1 => làm giảm thời gian tải
+    + Kết nối giữa trình duyệt (khách hàng) và trang web
+    + Trao đổi tin nhắn dạng nhị phân
+    + Tiêu đề tin nhắn HTTP nén nhiều
+    + Đẩy máy chủ với yêu cầu có thể dự đoán trước được
+    + Ưu tiên các yếu tố quan trọng của trang web
+
+3. HTTPS
+
+- HTTPS viết tắt của Hyper Text Transfer Protocol "Secure" (giao thức truyền tải siêu văn bản bảo mật) 
+là phiên bản an toàn của HTTP.
+
+- Tại sao phải có chứng chỉ SSL?
+
+- Tất cả các thông tin liên lạc được gửi qua các kết nối HTTP đều nằm trong văn bản thuần 
+và có thể được đọc bởi bất kỳ hacker nào có thể đột nhập vào kết nối giữa trình duyệt và trang web của bạn. Việc này có thể là một mối nguy hiểm nếu nó có chứa thông tin liên lạc nằm trong đơn đặt hàng, chi tiết thẻ tín dụng hoặc số an sinh xã hội của bạn. Với kết nối HTTPS, tất cả các thông tin liên lạc đều được mã hóa an toàn. Điều này có nghĩa là ngay cả khi ai đó đã đột nhập vào kết nối, 
+họ sẽ không thể giải mã bất kỳ dữ liệu nào đi qua giữa bạn và trang web.
+
+- Lợi ích của giao thức HTTPS:
+
++ Thông tin khách hàng, như số thẻ tín dụng, được mã hóa.
++ Khách truy cập có thể xác minh bạn là một doanh nghiệp đã đăng ký và bạn sở hữu tên miền.
++ Nhận được niềm tin của khách hàng và hoàn tất việc mua hàng từ các trang web sử dụng HTTPS.
+
+4. OAuth
+
+- OAuth là một phương thức chứng thực giúp các ứng dụng có thể chia sẻ tài nguyên với nhau 
+mà không cần chia sẻ thông tin username và password như những cách truyền thống cũ
+
+example: 
+- Đăng nhập = Google, Facebook, Twitter,...
+=> Sẽ cung cấp cho ứng dụng/website một cái token, 
+   Token này chứa một số quyền hạn nhất định
+=> Website có thể xác minh danh tính 
+(Nếu website này bị hacker tấn công thì nó chỉ lấy được thông tin hay hoạt động của bạn trên website đó 
+mà không ảnh hưởng đến những website khác mà bạn đang sử dụng.)
+
+- Sơ đồ vận hành thực tế của OAuth2
+
+1. Ứng dụng có thể là website hoặc app điện thoại gửi yêu cầu ủy quyền để truy cập vào Resource Server (Gmail,Facebook, Twitter hay Github…) thông qua người dùng
+
+2. Nếu người dùng đồng ý ủy quyền cho yêu cầu trên, Ứng dụng sẽ nhận được ủy quyền từ phía User (dưới dạng một token string)
+
+3. Ứng dụng gửi thông tin định danh (ID) của mình kèm theo ủy quyền của User tới Authorization Server
+
+4. Nếu thông tin định danh được xác thực và ủy quyền hợp lệ, Authorization Server sẽ trả về cho Ứng dụng access_token. Đến đây quá trình ủy quyền hoàn tất.
+
+5. Để truy cập vào tài nguyên (resource) từ Resource Server và lấy thông tin, Ứng dụng sẽ phải đưa ra access_token để xác thực.
+
+6. Nếu access_token hợp lệ, Resource Server sẽ trả về dữ liệu của tài nguyên đã được yêu cầu cho Ứng dụng.

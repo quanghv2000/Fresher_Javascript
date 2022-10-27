@@ -1,0 +1,13 @@
+1. C++ addons
+- NodeJS - trình thông dịch Javascript nằm trong trình duyệt (Chrome)
+--> được viết từ C++: compile Javascript trực tiếp thành native code thay vì interpreting byte code.
+"interpreting byte code" là gì?
+--> tốc độ nhanh hơn --> nhưng vẫn có thể tăng tốc và tối ưu ứng dụng nhanh hơn nũa = việc sử dụng C++
+
+-- Thư viện:
+Ta cần sử dụng node-gyp, đây là một build tool dùng để compile native addon modules cho Nodejs:
+"npm install -g node-gyp"
+-- Start building a new project NodeJS
+"npm init -y"
+ 
+2. Node API
