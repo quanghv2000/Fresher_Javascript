@@ -1,5 +1,5 @@
 /*
-    Shallow comparison (equality)
+    Shallow comparison (equality): So sánh nông
     - During shallow equality check of objects you get the list of properties (using Object.keys()) of both objects,
     then check the properties' values for equality.
 */
@@ -19,6 +19,7 @@ function shallowEqual(object1, object2) {
   }
   return true;
 }
+
 // Case 1: Object is not nested
 const hero1 = {
   name: "Batman",
@@ -47,7 +48,7 @@ const hero6 = {
     city: "Gotham",
   },
 };
-console.log("hero5 and hero6: ", shallowEqual(hero5, hero6)); // => true
+console.log("hero5 and hero6: ", shallowEqual(hero5, hero6)); // => false
 
 // console.log(Object.entries(hero5));
 // console.log(Object.entries(hero6));

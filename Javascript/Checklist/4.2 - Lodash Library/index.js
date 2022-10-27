@@ -1,1 +1,1 @@
-console.log('Lodash')
+console.log('npm i lodash')

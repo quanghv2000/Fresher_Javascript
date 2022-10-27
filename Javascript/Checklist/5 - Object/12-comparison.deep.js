@@ -1,5 +1,5 @@
 /*
-    Deep comparison (equality)
+    Deep comparison (equality): So sánh sâu
     - The deep equality is similar to the shallow equality, but with one difference. 
     During the shallow check, if the compared properties are objects, 
     a recursive shallow equality check is performed on these nested objects.

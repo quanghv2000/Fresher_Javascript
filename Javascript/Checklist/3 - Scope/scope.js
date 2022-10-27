@@ -4,7 +4,9 @@
     2. Code block: let, const
     3. Local: var, function
 */
+
 "use strict";
+
 // 1. Global
 var message = "Hello!";
 

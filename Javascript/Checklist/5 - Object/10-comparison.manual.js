@@ -1,5 +1,5 @@
 /*
-    Manual comparison
+    Manual comparison: So sánh thủ công
     - Manual comparison is way to compare objects 
     by content => is to read the properties and compare them manually.
 */
@@ -21,5 +21,6 @@ const hero3 = {
   slug: "CI398",
   name: "Joker",
 };
+
 console.log("hero1 and hero2: ", isHeroEqual(hero1, hero2)); // => true
 console.log("hero1 and hero3: ", isHeroEqual(hero1, hero3)); // => false
