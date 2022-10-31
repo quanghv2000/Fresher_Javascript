@@ -1,6 +1,7 @@
 /*  
     Memory Life Cycle: Allocate => Use => Release
-    - Stack: Static memory allocation
+    - Stack: + Static memory allocation - Cấp phát bộ nhớ tĩnh
+    - stores primitive values (strings, numbers, booleans, undefined, and null)
 */
 
 const male = true

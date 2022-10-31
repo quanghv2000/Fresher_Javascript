@@ -3,7 +3,8 @@
     - Arrow functions do not have a prototype property.
 */
 
-var Foo1 = function () {};
+// Expresstion Function
+var expressFunc = function () {};
 console.log(Foo1.prototype);
 /*
     {
@@ -12,5 +13,6 @@ console.log(Foo1.prototype);
     }
 */
 
-var Foo2 = () => {};
+// Arrow Function
+var arrowFunc = () => {};
 console.log(Foo2.prototype); // undefined

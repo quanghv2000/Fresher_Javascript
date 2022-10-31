@@ -1,6 +1,7 @@
 /*
     Arrow Function
     - Không thể sử dụng Arrow Function làm Function Constructor
+    - Vì arrow function không định nghĩa "this" key word
 */
 
 // 1. Syntax
@@ -12,8 +13,9 @@ const foo = () => {
 const course = {
     name: "Javascript",
     price: 235,
+    age: 22,
     getName: function() {
-        return this.name; // context
+        return this.name; // has context
     },
     getAge: () => {
         return this.age; // no context => undefined

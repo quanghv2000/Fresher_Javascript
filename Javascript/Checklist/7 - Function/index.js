@@ -7,29 +7,16 @@
 */
 
 // 1. Declaration function
-showMessage();
-
-function showMessage() {
+function declareFunc() {
     console.log("Declaration function!");
 }
 
 // 2. Expression function
-console.log(foo)
-
-var foo = function () {
+var expressFunc = function () {
     console.log("Expression function!")
 }
 
-foo();
-
-// setTimeout(function () {
-
-// })
-
-// var user = {
-//     foo: function () {
-
-//     }
-// }
-
 // 3. Arrow function
+const arrowFunc = () => {
+    console.log("Arrow function!")
+}

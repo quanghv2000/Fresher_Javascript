@@ -1,6 +1,6 @@
 /*
     Arrow Function - Object Methods
-    - Arrow functions do not have their own this
+    - Arrow functions has no contex "this" key word
 */
 
 "use strict";
@@ -8,7 +8,7 @@
 var obj = {
   // does not create a new scope
   a: 10,
-  b: () => console.log(this.a, this), // không có context
+  b: () => console.log(this.a, this), // không định nghĩa "this" key word
   c: function () {
     console.log(this.a, this);
   },

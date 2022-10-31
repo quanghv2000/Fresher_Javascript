@@ -1,6 +1,6 @@
 /*  
     Memory Life Cycle: Allocate => Use => Release
-    - Heap: Dynamic memory allocation
+    - Heap: + Dynamic memory allocation - Cấp phát bộ nhớ động
     - stores objects and functions
 */
 

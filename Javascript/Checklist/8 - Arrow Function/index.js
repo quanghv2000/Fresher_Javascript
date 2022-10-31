@@ -1,7 +1,7 @@
 /*
     Arrow Function
      - Note:
-     1. Arrow function ko có context
+     1. Arrow function has no context "this" key word
      2. Arrow function ko thể sử dụng làm function constructor
      3. The call, apply and bind methods are NOT suitable (thích hợp) as arrow functions
 */
@@ -12,7 +12,7 @@ const logger = (message) => {
 
 logger('Arrow Function!');
 
-// 1. Arrow function ko có context
+// 1. Arrow function định nghĩa (this)
 // example:
 const course = {
     name: 'Quang',

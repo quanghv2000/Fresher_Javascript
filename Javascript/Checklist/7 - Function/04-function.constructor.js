@@ -1,7 +1,7 @@
 // Function constructor
 
 function User(fullName, age, avatar) {
-    this.fullName = fullName;
+    this.fullName = fullName;Ư
     this.age = age;
     this.avatar = avatar;
     this.getName = function() {

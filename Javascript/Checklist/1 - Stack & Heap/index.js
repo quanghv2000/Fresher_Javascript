@@ -1,6 +1,11 @@
-// Stack and Heap
+/**
+ * Stack and Heap
+ * 1. Stack: Static memory allocation - Cấp phát bộ nhớ tĩnh
+ * 2. Heap: Dynamic memory allocation - Cấp phát bộ nhớ động 
+ * */ 
 
-// 1. Stack: Nơi mà javascript sử dụng để lưu trữ các static data
+// 1. Stack: Nơi mà javascript sử dụng để lưu trữ các static data (primitive values)
+// - Tham trị
 
 const company = 'FPT Software';
 const balance = 2000;
@@ -16,7 +21,8 @@ let birthDate = null;
 // | let name = "Quang";             |
 // | let birthDate = null;           |
 
-// 2. Heap: // Cấp phát bộ nhớ động
+// 2. Heap: Nơi mà javascript sử dụng để lưu trữ objects and functions (reference types)
+// - Tham chiếu
 
 const user = {
     id: 1,
