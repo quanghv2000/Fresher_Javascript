@@ -24,7 +24,7 @@
 /*
     let, const variables lifecycle
 
-    1. Declaration Phase: RefenrenceError => Temporal Dead Zone | Declared state
+    1. Declaration Phase: RefenrenceError => Temporal Dead Zone | Declared sate
 
     2. Initialization Phase: let variable; => variable === undefined | Initialized state
 
