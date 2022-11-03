@@ -4,8 +4,10 @@
 
 Array.prototype.myMap = function (callbackFunc) {
   const result = [];
-  for (let i = 0; i < this.length; i++) {
-    result.push(callbackFunc(this[i], i));
+  for (let index in this) {
+    if (this.hasOwnProperty(index)) {
+      result.push(callbackFunc(this[index], index, this));
+    }
   }
 
   return result;
