@@ -1,0 +1,23 @@
+- Độ hot.
+- Cộng đồng lớn.
+- Khả năng mở rộng tốt, tái sử dụng cao.
+- Hiệu suất cao.
+- Phát triển nhanh chóng.
+- Khả năng tương thích ngược.
+
+1. It’s easy to learn - Dễ dàng học.
+2. It helps to build rich user interfaces - Giúp xây dựng giao diện người dùng phong phú.
+3. It allows writing custom components.
+4. It uplifts developers’ productivity.
+5. It offers fast rendering.
+6. It is SEO-friendly.
+7. It comes with useful developer toolset.
+8. Strong community support.
+9. It offer better code stability.
+10. It is used by many fortune 500 companies.
+11. Proficient Data binding.
+12. Extend your tools and capacities.
+13. Testing and Functionality.
+14. UI-focused designs.
+15. It provides a unique abstraction layer.
+16. Template designing made easy.

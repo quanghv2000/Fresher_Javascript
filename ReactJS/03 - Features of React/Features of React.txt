@@ -1,0 +1,8 @@
+1. JSX (JavaScript Syntax Extension)
+2. Virtual DOM
+3. One-way data binding
+4. Performance
+5. Extensions
+6. Conditional statements
+7. Components
+8. Simplicity
