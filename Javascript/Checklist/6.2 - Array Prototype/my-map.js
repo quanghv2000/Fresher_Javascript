@@ -29,9 +29,21 @@ const courses = [
 ];
 
 const callbackFunc = (course, index) => {
-  return course;
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ course, index });
+    }, 2000);
+  });
 };
 
 const myCourse = courses.myMap(callbackFunc);
 
-console.log(myCourse)
+console.log(myCourse); // [ Promise { <pending> }, Promise { <pending> }, Promise { <pending> } ]
+
+const myResult = async () => {
+  const result = await Promise.all(myCourse);
+
+  console.log("Result: ", result);
+};
+
+myResult();
