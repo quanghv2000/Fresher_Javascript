@@ -5,15 +5,15 @@
 */
 
 const person = {
-    name: 'John',
-    age: 24,
+  name: 'John',
+  age: 24,
 };
 
 const hobbies = ['hiking', 'reading'];
 
 function foo() {
-    const a = 1;
-    console.log('Function stored in heap!')
+  const a = 1;
+  console.log('Function stored in heap!');
 }
 
 /*
@@ -38,6 +38,5 @@ const b = 1;
 const c = [1];
 const d = [1];
 
-console.log(a === b) // true --- stack
-console.log(c === d) // false --- heap
-
+console.log(a === b); // true --- stack
+console.log(c === d); // false --- heap
