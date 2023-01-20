@@ -1,8 +1,8 @@
 /**
  * Stack and Heap
  * 1. Stack: Static memory allocation - Cấp phát bộ nhớ tĩnh
- * 2. Heap: Dynamic memory allocation - Cấp phát bộ nhớ động 
- * */ 
+ * 2. Heap: Dynamic memory allocation - Cấp phát bộ nhớ động
+ * */
 
 // 1. Stack: Nơi mà javascript sử dụng để lưu trữ các static data (primitive values)
 // - Tham trị
@@ -10,7 +10,7 @@
 const company = 'FPT Software';
 const balance = 2000;
 let isActive = true;
-let name = "Quang";
+let name = 'Quang';
 let birthDate = null;
 
 // Stack sẽ lưu các biến trên như sau:
@@ -25,19 +25,19 @@ let birthDate = null;
 // - Tham chiếu
 
 const user = {
-    id: 1,
-    name: "Quang",
-    age: 22
-}
+  id: 1,
+  name: 'Quang',
+  age: 22,
+};
 
-user.company = 'FPT Software'
+user.company = 'FPT Software';
 
 function isHeap() {
-    return 'This is Heap Example!';
+  return 'This is Heap Example!';
 }
 
-const employees = ["John", "Smith", "Quang", "Tuan"];
-employees.push("Lan");
+const employees = ['John', 'Smith', 'Quang', 'Tuan'];
+employees.push('Lan');
 
 const isDone = true;
 
@@ -64,12 +64,14 @@ const isDone = true;
 
 // ["John", "Smith", "Quang", "Tuan"]
 
-// * Các biên "user", "isHeap", "employees" nằm trong stack 
+// * Các biên "user", "isHeap", "employees" nằm trong stack
 // giữ tham chiếu đến các object và function nằm trong heap
 
-// Ví dụ: 
+// Ví dụ:
 
 const a = 4; // => a = 4 được lưu trong stack
 const person = {
-    name: "Tuan"
-} // person được lưu trong stack tham chiếu đến {name: "Tuan"} lưu trong heap
+  name: 'Tuan',
+}; // person được lưu trong stack tham chiếu đến {name: "Tuan"} lưu trong heap
+
+

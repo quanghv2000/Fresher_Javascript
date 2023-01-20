@@ -7,16 +7,16 @@
 
 // 1. Scope: block scope {}
 
-const language = "JavaScript";
+const language = 'JavaScript';
 
 {
-    const language = "React"; // Phạm vi khối
-    console.log(language); // "React"
+  const language = 'React'; // Phạm vi khối
+  console.log(language); // "React"
 }
 
 function foo() {
-    const language = "Python";
-    console.log(language);
+  const language = 'Python';
+  console.log(language);
 }
 
 foo(); // "Python"
@@ -29,19 +29,19 @@ console.log(language); // "JavaScript"
 
 // Change properties in const example
 const user = {
-    name: "Quang",
-    age: 24,
-}
+  name: 'Quang',
+  age: 24,
+};
 
-user.name = "John";
+user.name = 'John';
 
 console.log(user); // { name: 'John', age: 24 }
 
 const numbers = [];
-numbers.push(1,2,3);
+numbers.push(1, 2, 3);
 console.log(numbers);
 
-const fun = 'bar'; 
+const fun = 'bar';
 // fun = 'bar2';       // error - can not re-assign
 // var fun = 'bar3';   // error - already declared
 // function fun() {};  // error - already declared

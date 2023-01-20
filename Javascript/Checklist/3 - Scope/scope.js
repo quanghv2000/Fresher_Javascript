@@ -5,10 +5,10 @@
     3. Local: var, function
 */
 
-"use strict";
+'use strict';
 
 // 1. Global
-var message = "Hello!";
+var message = 'Hello!';
 
 console.log(this.message); // Hello!
 
@@ -24,7 +24,7 @@ logger();
   const age = 18;
   console.log(age); // 18
 
-  var name = "Quang";
+  var name = 'Quang';
 }
 
 console.log(name);
@@ -33,15 +33,15 @@ console.log(name);
 // 3. Local
 
 function foo() {
-  var myVar = "dskfh";
+  var myVar = 'dskfh';
 
   showMessage(); // Local scope!
 
-  let name = "John";
+  let name = 'John';
   console.log(name); // John
 
   function showMessage() {
-    console.log("Local scope!");
+    console.log('Local scope!');
   }
 }
 
@@ -52,9 +52,9 @@ foo();
 // Scope chain: Chuỗi phạm vi
 
 {
-  const myScopeChain = "My scope chain";
+  const myScopeChain = 'My scope chain';
   {
-    const myScopeChain = "My scope chain 2";
+    const myScopeChain = 'My scope chain 2';
     console.log(myScopeChain);
     {
       console.log(myScopeChain);
@@ -72,9 +72,8 @@ testFunc();
     The GEC is the base/default Execution Context where all JavaScript code that is not inside of a function gets executed.
 */
 
-
 exFunc();
 
 var exFunc = function () {
   console.log('exFunc');
-}
+};

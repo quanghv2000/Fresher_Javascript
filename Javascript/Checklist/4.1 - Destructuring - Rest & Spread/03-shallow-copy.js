@@ -5,40 +5,40 @@
 
 const user = {
   id: 1,
-  name: "Quang",
+  name: 'Quang',
 };
 
 const user1 = user;
 
-user.name = "John";
+user.name = 'John';
 user1.age = 24;
 user.contact = {
-  phone: "0986915765",
+  phone: '0986915765',
 };
 
-console.log("user: ", user);
-console.log("user1: ", user1);
+console.log('user: ', user);
+console.log('user1: ', user1);
 
 // Shallow copy exam when use spread operator => Object.assign is same too
 
 let person = {
-    id: 1,
-    name: "Quang",
-    contact: {
-        email: "old",
-    }
+  id: 1,
+  name: 'Quang',
+  contact: {
+    email: 'old',
+  },
 };
 
-let copiedPerson = {...person};
-copiedPerson.name = "John";
+let copiedPerson = { ...person };
+copiedPerson.name = 'John';
 
-console.log("contact: ----", copiedPerson["contact"]);
+console.log('contact: ----', copiedPerson['contact']);
 
-copiedPerson.contact.email = "new email";
+copiedPerson.contact.email = 'new email';
 
 // copiedPerson["contact"] = {
 //     email: "new email",
 // },
 
-console.log("person: ", person);
-console.log("copiedPerson: ", copiedPerson);
+console.log('person: ', person);
+console.log('copiedPerson: ', copiedPerson);
